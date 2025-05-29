@@ -47,7 +47,7 @@ DB_NAME=ordermatching</code></pre>
   </li>
 </ol>
 
-<h2>API Usage (Sample Calls)</h2>
+<h2>API EndPoints</h2>
 
 <h3>Place an Order</h3>
 <pre><code>POST http://localhost:8080/api/v1/orders \
