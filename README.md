@@ -71,5 +71,13 @@ DB_NAME=ordermatching</code></pre>
 
 
 <h2>OutPut</h2>
+<h3>PlaceOrder </h3>
 <img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/Place_BUY_LIMIT_ORDER.PNG"/>
+<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/place_sell_limit_order.PNG"/>
+<h3>GetOrderBook </h3>
+<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/GET_ORDER_BOOK.PNG"/>
+<h3>GetTrade </h3>
+<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/get_trade.PNG"/>
+<h3>Edge Cases:</h3>
+<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/edge_case.PNG"/>
 
