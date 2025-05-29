@@ -70,5 +70,6 @@ DB_NAME=ordermatching</code></pre>
 <pre><code> http://localhost:8080/api/v1/trades?symbol=BTCUSD</code></pre>
 
 
-
+<h2>OutPut</h2>
+<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/Place_BUY_LIMIT_ORDER.PNG"/>
 
