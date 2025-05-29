@@ -48,36 +48,42 @@ DB_NAME=ordermatching</code></pre>
 </ol>
 
 <h2>API EndPoints</h2>
+<h4>Base URL: http://localhost:8080/api/v1</h3>
+<pre><code>1. Place Order
+http 
+POST /orders
+Content-Type: application/json
 
-<h3>Place an Order</h3>
-<pre><code>POST http://localhost:8080/api/v1/orders \
--H "Content-Type: application/json" \
--d '{
-  "symbol": "BTCUSD",
-  "side": "buy",
-  "type": "limit",
-  "price": "28000",
-  "quantity": "1"
-}'</code></pre>
+{
+    "symbol": "BTCUSD",
+    "side": "buy",
+    "type": "limit",
+    "price": "50000.00",
+    "quantity": "0.1"
+}</code></pre>
+<pre><code>2. Cancel Order
+http
+DELETE /orders/{orderId}</code></pre>
+<pre><code>3. Get Order Status
+http
+GET /orders/{orderId}</code></pre>
 
-<h3>Cancel an Order</h3>
-<pre><code>DELETE http://localhost:8080/api/v1/orders/{orderID}</code></pre>
+<pre><code> 4. Get Order Book
+http
+GET /orderbook?symbol=BTCUSD
+</code></pre>
 
-<h3>Get Order Book</h3>
-<pre><code> http://localhost:8080/api/v1/orderbook?symbol=BTCUSD</code></pre>
-
-<h3>Get Trades</h3>
-<pre><code> http://localhost:8080/api/v1/trades?symbol=BTCUSD</code></pre>
-
-
-<h2>OutPut</h2>
-<h3>PlaceOrder </h3>
+<pre><code>5. GetTrades
+http
+GET /trades?symbol=BTCUSD&limit=50</code></pre>
+<h2>Results</h2>
+<pre><code> <h3>PlaceOrder </h3>
 <img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/Place_BUY_LIMIT_ORDER.PNG"/>
-<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/place_sell_limit_order.PNG"/>
-<h3>GetOrderBook </h3>
-<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/GET_ORDER_BOOK.PNG"/>
-<h3>GetTrade </h3>
-<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/get_trade.PNG"/>
-<h3>Edge Cases:</h3>
-<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/edge_case.PNG"/>
+ <img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/place_sell_limit_order.PNG"/></code></pre>
+<pre><code> <h3>GetOrderBook </h3>
+<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/GET_ORDER_BOOK.PNG"/></code></pre>
+<pre><code> <h3>GetTrade </h3>
+<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/get_trade.PNG"/></code></pre>
+<pre><code> <h3>Edge Cases:</h3>
+<img src="https://github.com/spee-dev/GOLANG-ORDER-MATCHING-SYSTEM/blob/main/edge_case.PNG"/></code></pre>
 
